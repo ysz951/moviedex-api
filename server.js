@@ -22,7 +22,7 @@ app.use(function validateBearerToken(req, res, next) {
     next()
   })
 
-app.get('/movies', (req, res) => {
+app.get('/movie', (req, res) => {
     const {genre, country, avg_vote} = req.query;
     let response = MOVIEDEX;
     if (genre) {
